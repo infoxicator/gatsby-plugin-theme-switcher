@@ -1,0 +1,30 @@
+# misc
+.DS_Store
+.idea
+.sass_cache
+
+# node/npm
+node_modules
+*.log
+
+# build
+dist
+lib
+*.tgz
+
+# test
+junit.xml
+test-results
+coverage
+.jest-cache
+
+# build output
+gatsby-browser.js
+gatsby-node.js
+gatsby-ssr.js
+theme-script.js
+index.js
+theme-context.js
+use-local-storage.js
+!src/**
+!__tests__/**
