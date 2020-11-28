@@ -39,6 +39,9 @@
     "name": "Ruben Casas",
     "email": "ruben@infoxication.net"
   },
+  "contributors": [
+    "Samuel Larsen-Disney <s.larsendisney@gmail.com> (https://github.com/slarsendisney)"
+  ],
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/infoxicator/gatsby-plugin-use-theme-switcher/issues"
