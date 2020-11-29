@@ -117,7 +117,7 @@ export default ThemePicker;
 
 ## Advanced Usage
 
-### Add your default theme options in `gatsby-config.js`.
+### Add your default theme options in `gatsby-config.js`.
 
 ```js
 module.exports = {

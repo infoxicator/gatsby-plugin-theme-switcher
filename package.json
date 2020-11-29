@@ -27,7 +27,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/infoxicator/gatsby-plugin-use-theme-switcher.git"
+    "url": "git+https://github.com/infoxicator/gatsby-plugin-theme-switcher.git"
   },
   "keywords": [
     "gatsby",
@@ -44,9 +44,9 @@
   ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/infoxicator/gatsby-plugin-use-theme-switcher/issues"
+    "url": "https://github.com/infoxicator/gatsby-plugin-theme-switcher/issues"
   },
-  "homepage": "https://github.com/infoxicator/gatsby-plugin-use-theme-switcher#readme",
+  "homepage": "https://github.com/infoxicator/gatsby-plugin-theme-switcher#readme",
   "dependencies": {
     "prop-types": "^15.7.2",
     "terser": "^4.8.0"
