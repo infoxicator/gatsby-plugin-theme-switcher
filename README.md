@@ -6,6 +6,11 @@ A [Gatsby][gatsby] plugin to switch between multiple themes, including dark mode
 
 ![theme-switcher-demo](https://user-images.githubusercontent.com/17012976/100528209-1202d200-31d2-11eb-8868-359d652ed1dd.gif)
 
+## Demo
+
+[Live Example](https://gatsby-plugin-theme-switcher-example.vercel.app/)
+
+[Example Repo](https://github.com/infoxicator/gatsby-plugin-theme-switcher-example)
 
 ## Install
 
@@ -146,6 +151,6 @@ This plugin is based on the work and inspired by [Sam Larsen-Disney](https://sld
 
 [MIT][LICENSE] LICENSE
 
-[package]: https://github.com/infoxicator/gatsby-plugin-theme-switcher
+[package]: https://www.npmjs.com/package/gatsby-plugin-theme-switcher
 [gatsby]: https://www.gatsbyjs.org
 [LICENSE]: https://github.com/infoxicator/gatsby-plugin-theme-switcher/blob/master/LICENSE.txt
