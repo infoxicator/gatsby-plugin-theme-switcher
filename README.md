@@ -26,7 +26,6 @@ yarn add gatsby-plugin-theme-switcher
 module.exports = {
   plugins: [
     'gatsby-plugin-theme-switcher',
-    ''
   ],
 };
 ```
@@ -88,25 +87,28 @@ const myThemes = [
 ]
 
 const ThemePicker = ({ theme, setTheme }) => {
-  return (
-    <div>
-      {myThemes.map((item, index) => {
-          const nextTheme = myThemes.length -1 === index ? myThemes[0].id : myThemes[index+1].id;
-        
-           return item.id === theme ? (
-            <div key={item.id} className={item.id}>
-              <button
-                aria-label={`Theme ${item.name}`}
-                onClick={() => setTheme(nextTheme)}
-              >
-                {item.name}
-              </button>
+    if (theme) {
+        return (
+            <div>
+            {myThemes.map((item, index) => {
+                const nextTheme = myThemes.length -1 === index ? myThemes[0].id : myThemes[index+1].id;
+                
+                return item.id === theme ? (
+                    <div key={item.id} className={item.id}>
+                    <button
+                        aria-label={`Theme ${item.name}`}
+                        onClick={() => setTheme(nextTheme)}
+                    >
+                        {item.name}
+                    </button>
+                    </div>
+                ) : null;
+                    }
+                )}
             </div>
-          ) : null;
-            }
-        )}
-    </div>
-  );
+        );
+    }
+    return null;
 };
 
 export default ThemePicker;
