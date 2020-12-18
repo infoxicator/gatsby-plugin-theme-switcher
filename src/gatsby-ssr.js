@@ -1,17 +1,17 @@
-import React from "react";
-import ThemeScriptTag from "./theme-script";
-import { ThemeProvider } from "./theme-context";
+import React from "react"
+import ThemeScriptTag from "./theme-script"
+import { ThemeProvider } from "./theme-context"
 
 export function onRenderBody({ setPreBodyComponents }, pluginOptions) {
   // eslint-disable-next-line no-param-reassign
-  delete pluginOptions.plugins;
+  delete pluginOptions.plugins
 
   const {
     defaultDarkTheme,
     defaultLightTheme,
     themeStorageKey,
     minify,
-  } = pluginOptions;
+  } = pluginOptions
 
   setPreBodyComponents([
     <ThemeScriptTag
@@ -21,9 +21,11 @@ export function onRenderBody({ setPreBodyComponents }, pluginOptions) {
       themeStorageKey={themeStorageKey}
       minify={minify}
     />,
-  ]);
+  ])
 }
 
-export const wrapRootElement = ({ element }) => {
-  return <ThemeProvider>{element}</ThemeProvider>;
-};
+export const wrapRootElement = ({ element }, pluginOptions) => {
+  return (
+    <ThemeProvider themeStorageKey={pluginOptions.themeStorageKey}>{element}</ThemeProvider>
+  )
+}
